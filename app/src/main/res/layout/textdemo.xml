@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="@color/deafault_Activity_bg"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#555555"
+        android:text="我是字体样式示例TextAppearance.AppCompat.Small"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#555555"
+        android:text="我是字体样式示例TextAppearance.AppCompat"
+        android:textAppearance="@style/TextAppearance.AppCompat"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#555555"
+        android:text="我是字体样式示例Button"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#555555"
+        android:text="我是字体样式示例Medium"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#555555"
+        android:text="我是字体样式示例Large"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#555555"
+        android:text="我是字体样式示例Caption"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#555555"
+        android:text="我是字体样式示例Headline"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#555555"
+        android:text="我是字体样式示例Menu"
+        android:textAppearance="@style/TextAppearance.AppCompat.Menu"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#555555"
+        android:text="我是字体样式示例Title"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#555555"
+        android:text="TextView.SpinnerItem"
+        android:textAppearance="@style/Widget.AppCompat.TextView.SpinnerItem"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#555555"
+        android:text="我是字体样式示例ListView"
+        android:textAppearance="@style/Widget.AppCompat.ListView"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#555555"
+        android:text="我是字体样式示例PopupMenu.Small"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#555555"
+        android:text="我是字体样式示例ListView.Menu"
+        android:textAppearance="@style/Widget.AppCompat.ListView.Menu"/>
+
+
+
+
+
+
+</LinearLayout>

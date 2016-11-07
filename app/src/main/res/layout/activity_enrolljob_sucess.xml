@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/deafault_Activity_bg"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_10_dip"
+        android:background="@color/deafault_Item_bg">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="投递成功"
+            android:layout_centerInParent="true"
+            android:textColor="#333333"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:layout_marginTop="1dp"
+        android:gravity="center_vertical"
+        android:padding="@dimen/dimen_20_dip">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/btn_choose4"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10_dip"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="投递成功，企业将收到你的申请"
+                    android:textColor="#666666"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Menu"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5_dip"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="今天还可以报名"
+                    android:textColor="#999999"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="7"
+                    android:textColor="@color/colorPrimary"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="次"
+                    android:textColor="#999999"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_20_dip"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dimen_20_dip"
+            android:padding="@dimen/dimen_20_dip"
+            android:background="@drawable/btn_deafault_bg_green">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:text="绑定微信，即时获取投递动态"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dimen_20_dip"
+            android:padding="@dimen/dimen_20_dip"
+            android:background="@drawable/btn_deafault_bg_orange">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:text="分享并领取兼职保险"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dimen_20_dip"
+            android:padding="@dimen/dimen_20_dip">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:text="查看我的投递信息"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

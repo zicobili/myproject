@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/ly_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="#f4f4f4"></FrameLayout>
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:paddingTop="@dimen/dimen_10_dip"
+        android:paddingBottom="@dimen/dimen_10_dip">
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="首页"
+            android:button="@null"
+            android:gravity="center"
+            android:textSize="@dimen/dimen_8_sp"
+            android:textColor="@color/color_radiobutton"
+            android:drawableTop="@drawable/radiobutton_index"/>
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="全部兼职"
+            android:button="@null"
+            android:gravity="center"
+            android:textSize="@dimen/dimen_8_sp"
+            android:textColor="@color/color_radiobutton"
+            android:drawableTop="@drawable/radiobutton_new"/>
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="喵"
+            android:button="@null"
+            android:gravity="center"
+            android:textSize="@dimen/dimen_8_sp"
+            android:textColor="@color/color_radiobutton"
+            android:drawableTop="@drawable/radiobutton_miao"/>
+        <RadioButton
+            android:id="@+id/rb4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="个人中心"
+            android:button="@null"
+            android:gravity="center"
+            android:textSize="@dimen/dimen_8_sp"
+            android:textColor="@color/color_radiobutton"
+            android:drawableTop="@drawable/radiobutton_me"/>
+
+
+    </RadioGroup>
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4">
+<TextView
+    android:id="@+id/title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+    android:textColor="#FF7411"
+    android:gravity="center"
+    android:layout_marginTop="@dimen/dimen_30_dip"
+    android:text="选择自己的头衔"/>
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:text="获取更适合您的兼职信息"
+        android:gravity="center"
+        android:textColor="#999999"
+        android:layout_marginTop="@dimen/dimen_30_dip"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title2"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/btn_identity_student"
+            android:layout_marginTop="@dimen/dimen_30_dip"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="学生党"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="#999999"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/btn_identity_worker"
+            android:layout_marginTop="@dimen/dimen_30_dip"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上班族"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="#999999"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_31_dip"
+        android:text="选择身份进入兼职猫"
+        android:gravity="center"
+        android:textSize="@dimen/dimen_31_dip"
+        android:textColor="#999999"
+        android:layout_marginTop="@dimen/dimen_31_dip"/>
+
+</RelativeLayout>
