@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/deafault_Activity_bg"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/deafault_Item_bg">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333"
+            android:layout_centerInParent="true"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:text="我的钱包"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_30_dip"
+        android:background="#e93f3f">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前余额(RMB)"
+            android:textAppearance="@style/TextAppearance.AppCompat"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:layout_weight="1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#ffffff"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_20_dip"
+                    android:text="提现"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:background="@drawable/btn_me_collet_tixian"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <RadioGroup
+        android:id="@+id/miao_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/deafault_Item_bg"
+        android:padding="0dp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/miao_rb1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:paddingTop="@dimen/dimen_20_dip"
+            android:text="收入明细"
+            android:background="@color/deafault_Item_bg"
+            android:button="@null"
+            android:drawablePadding="@dimen/dimen_20_dip"
+            android:drawableBottom="@drawable/miao_topbar_bg"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/color_miao_topbar"/>
+        <RadioButton
+            android:id="@+id/miao_rb2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="@dimen/dimen_20_dip"
+            android:layout_weight="1"
+            android:text="支出明细"
+            android:background="@color/deafault_Item_bg"
+            android:button="@null"
+            android:drawablePadding="@dimen/dimen_20_dip"
+            android:drawableBottom="@drawable/miao_topbar_bg"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/color_miao_topbar"/>
+
+
+    </RadioGroup>
+
+
+</LinearLayout>

@@ -33,6 +33,7 @@
                 android:textColor="#555555"
                 android:textAppearance="?android:attr/textAppearance"/>
             <EditText
+                android:id="@+id/login_account"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceInverse"
@@ -59,6 +60,7 @@
                 android:text="密码"
                 android:textAppearance="?android:attr/textAppearance"/>
             <EditText
+                android:id="@+id/login_password"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -68,6 +70,7 @@
                 android:layout_marginLeft="@dimen/dimen_50_dip"
                 android:background="@null"/>
             <TextView
+                android:id="@+id/login_restpassword"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="忘记密码？"
@@ -88,6 +91,7 @@
         android:layout_marginTop="@dimen/dimen_30_dip"
         android:layout_below="@+id/editview"/>
     <TextView
+        android:id="@+id/login2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="动态密码登录"
@@ -105,6 +109,7 @@
         android:layout_marginBottom="@dimen/dimen_30_dip"
         android:layout_alignParentBottom="true">
         <TextView
+            android:id="@+id/login_reg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="注册帐号"
@@ -119,6 +124,7 @@
             android:textColor="#ffffff"
             android:textAppearance="?android:attr/textAppearanceSmall"/>
         <TextView
+            android:id="@+id/login_skip"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="随便看看"
