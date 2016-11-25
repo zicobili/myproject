@@ -15,7 +15,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:layout_margin="@dimen/dimen_10_dip"
+            android:layout_margin="@dimen/dimen_20_dip"
             android:background="@drawable/shape_ic_jobbg_green">
             <TextView
                 android:id="@+id/job_type"
@@ -28,7 +28,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/dimen_10_dip"
+            android:layout_marginLeft="@dimen/dimen_20_dip"
             android:layout_weight="1"
             android:orientation="vertical">
             <LinearLayout
@@ -40,8 +40,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="校园推广大使"
-                    android:textColor="#666666"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+                    android:textColor="#333333"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Menu"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -49,7 +49,7 @@
                     android:paddingLeft="@dimen/dimen_10_dip"
                     android:paddingRight="@dimen/dimen_5_dip"
                     android:textColor="#fe551a"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+                    android:textAppearance="@style/TextAppearance.AppCompat.Menu"/>
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -58,7 +58,6 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dimen_10_dip"
                 android:orientation="horizontal">
                 <TextView
                     android:id="@+id/job_local"
@@ -66,7 +65,7 @@
                     android:layout_height="wrap_content"
                     android:text="美兰/>30km"
                     android:textColor="#999999"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"/>
                 <TextView
                     android:id="@+id/job_data"
                     android:layout_width="wrap_content"
@@ -74,13 +73,12 @@
                     android:layout_marginLeft="@dimen/dimen_20_dip"
                     android:text="11月10日-11月25日"
                     android:textColor="#999999"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"/>
 
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dimen_10_dip"
                 android:orientation="horizontal">
                 <TextView
                     android:id="@+id/job_pushtime"
@@ -88,7 +86,7 @@
                     android:layout_height="wrap_content"
                     android:text="刚刚"
                     android:textColor="#999999"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"/>
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
