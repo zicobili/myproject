@@ -64,6 +64,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 Toast.makeText(this,"login2",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btn_submit:
+
                 if(username.equals(ed_account.getText().toString()) && password.equals(ed_password.getText().toString()) ){
                     SPUtils.putBoolean(lcontext,"welcomeGuide","isLogin",true);
                     Dialog dialog = new AlertDialog.Builder(this).setIcon(android.R.drawable.btn_star).setTitle("登陆成功")
