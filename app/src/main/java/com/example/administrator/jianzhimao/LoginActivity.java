@@ -1,6 +1,10 @@
 package com.example.administrator.jianzhimao;
 
 
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -12,12 +16,19 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
+    private  String username = "admin";
+    private  String password = "admin123";
+    private EditText ed_account;
+    private EditText ed_password;
+    private Context lcontext;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        EditText ed_account = (EditText) findViewById(R.id.login_account);
-        EditText ed_password = (EditText) findViewById(R.id.login_password);
+        lcontext = this;
+        ed_account = (EditText) findViewById(R.id.login_account);
+        ed_password = (EditText) findViewById(R.id.login_password);
 
         Button btn_submit = (Button) findViewById(R.id.btn_submit);
         btn_submit.setOnClickListener(this);
@@ -51,7 +62,31 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 Toast.makeText(this,"login2",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btn_submit:
-                Toast.makeText(this,"you click btn",Toast.LENGTH_SHORT).show();
+                if(username.equals(ed_account.getText()) && password.equals(ed_password.getText()) ){
+                    Dialog dialog = new AlertDialog.Builder(this).setIcon(android.R.drawable.btn_star).setTitle("登陆成功")
+                            .setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    goActivity(MainActivity.class);
+                                    SPUtils.putBoolean(lcontext,"welcomeGuide","isLogin",true);
+                                    finish();
+                                }
+                            }).create();
+                    dialog.show();
+                }else {
+                    Dialog dialog = new AlertDialog.Builder(this).setIcon(android.R.drawable.btn_star).setTitle("提示")
+                            .setMessage("用户名或密码错误，请重新输入！")
+                            .setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    ed_account.setText("");
+                                    ed_password.setText("");
+                                }
+                            }).create();
+                    dialog.show();
+                }
+
+
                 break;
 
 

@@ -37,8 +37,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceInverse"
-                android:text="手机号码"
-                android:textColor="#999999"
+                android:hint="请输入手机号"
+                android:textColor="#555555"
+                android:textColorHint="#999999"
                 android:layout_marginLeft="@dimen/dimen_50_dip"
                 android:background="@null"/>
 
@@ -64,9 +65,11 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textColor="#999999"
+                android:textColor="#555555"
+                android:inputType="textPassword"
                 android:textAppearance="?android:attr/textAppearanceInverse"
-                android:text="6-20位数字或字母"
+                android:hint="6-12位数字或字母"
+                android:textColorHint="#999999"
                 android:layout_marginLeft="@dimen/dimen_50_dip"
                 android:background="@null"/>
             <TextView
