@@ -42,7 +42,7 @@
             android:button="@null"
             android:drawablePadding="@dimen/dimen_20_dip"
             android:drawableBottom="@drawable/miao_topbar_bg"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textAppearance="@style/TextAppearance.AppCompat.Menu"
             android:textColor="@color/color_miao_topbar"/>
         <RadioButton
             android:id="@+id/miao_rb2"
@@ -56,7 +56,7 @@
             android:button="@null"
             android:drawablePadding="@dimen/dimen_20_dip"
             android:drawableBottom="@drawable/miao_topbar_bg"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textAppearance="@style/TextAppearance.AppCompat.Menu"
             android:textColor="@color/color_miao_topbar"/>
 
 
