@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.administrator.jianzhimao">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:name=".MyApplication"
         android:allowBackup="true"
@@ -9,18 +12,20 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".MainActivity">
+        <activity android:name=".splanwellcom">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SelectIdentityActivity"></activity>
-        <activity android:name=".ActivityJinggang"></activity>
-        <activity android:name=".ActivityJobDetail"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".SplashActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SelectIdentityActivity" />
+        <activity android:name=".ActivityJinggang" />
+        <activity android:name=".ActivityJobDetail" />
+        <activity android:name=".Activity_chat"></activity>
     </application>
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
 </manifest>

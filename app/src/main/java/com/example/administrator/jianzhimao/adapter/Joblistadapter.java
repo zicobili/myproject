@@ -17,19 +17,25 @@ import java.util.Locale;
  * Created by Administrator on 2016/11/6.
  */
 
-public class Joblistadapter extends BaseAdapter{
+public class Joblistadapter extends BaseAdapter implements View.OnClickListener {
     private Context context;
     private LayoutInflater inflater;
     private List<Job> list;
+    private Callback mcallback;
 
+    @Override
+    public void onClick(View v) {
+        mcallback.click(v);
+    }
 
-
-
-    public Joblistadapter(Context context,List<Job> list){
+    public interface Callback{
+        public void click(View v);
+    }
+    public Joblistadapter(Context context,List<Job> list,Callback callback){
         this.context = context;
         this.inflater = LayoutInflater.from(context);
         this.list = list;
-
+        this.mcallback = callback;
     }
 
     @Override
