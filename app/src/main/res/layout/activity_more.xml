@@ -8,23 +8,23 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/deafault_Item_bg"
-        android:paddingLeft="@dimen/dimen_20_dip"
-        android:paddingTop="@dimen/dimen_10_dip"
-        android:paddingBottom="@dimen/dimen_10_dip">
+        android:background="@color/deafault_Item_bg">
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@mipmap/back"/>
         <TextView
+            android:id="@+id/more_toptitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:textColor="#333333"
             android:text="更多"
+            android:padding="@dimen/dimen_20_dip"
             android:layout_centerInParent="true"/>
 
     </RelativeLayout>
+
     <View
         android:layout_width="match_parent"
         android:layout_height="1px"
@@ -198,6 +198,37 @@
                     android:layout_height="wrap_content"
                     android:background="@mipmap/next"/>
             </LinearLayout>
+            <LinearLayout
+                android:id="@+id/mlogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/dimen_10_dip"
+                android:paddingBottom="@dimen/dimen_10_dip"
+                android:paddingLeft="@dimen/dimen_20_dip"
+                android:paddingRight="@dimen/dimen_20_dip"
+                android:layout_marginTop="1px"
+                android:gravity="center_vertical"
+                android:visibility="gone"
+                android:background="@color/deafault_Item_bg">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/about"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="注销登陆"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+                    android:textColor="#555555"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/next"/>
+            </LinearLayout>
+
+
         </LinearLayout>
     </ScrollView>
 

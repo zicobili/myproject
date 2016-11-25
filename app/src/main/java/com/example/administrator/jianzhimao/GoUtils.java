@@ -39,6 +39,12 @@ public class  GoUtils {
 
     }
 
+    public static void logout(Context lcontext){
+        Intent intent = new Intent(lcontext,LoginActivity.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+        lcontext.startActivity(intent);
+        SPUtils.putBoolean(lcontext,"welcomeGuide","isLogin",false);
+    }
+
 
 
     public static void gotoac (Context gcontext,Class mclass){

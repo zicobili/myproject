@@ -25,11 +25,12 @@
         <activity android:name=".SelectIdentityActivity" />
         <activity android:name=".ActivityJinggang" />
         <activity android:name=".ActivityJobDetail" />
-        <activity android:name=".Activity_chat"></activity>
+        <activity android:name=".Activity_chat"/>
         <activity android:name=".miaomission" />
         <activity android:name=".parttimetrip" />
         <activity android:name=".nearjob" />
         <activity android:name=".enrolljob" />
+        <activity android:name=".me_more" />
     </application>
 
 </manifest>
