@@ -56,7 +56,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="实时获取投递动态"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Menu"
                     android:textColor="#555555"/>
                 <ImageView
                     android:layout_width="wrap_content"
@@ -83,7 +83,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="设置密码"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Menu"
                     android:textColor="#555555"/>
                 <ImageView
                     android:layout_width="wrap_content"
@@ -110,7 +110,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="新版本检测"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Menu"
                     android:textColor="#555555"/>
                 <ImageView
                     android:layout_width="wrap_content"
@@ -137,7 +137,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="关于兼职猫"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Menu"
                     android:textColor="#555555"/>
                 <ImageView
                     android:layout_width="wrap_content"
@@ -164,7 +164,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="清理缓存"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Menu"
                     android:textColor="#555555"/>
                 <ImageView
                     android:layout_width="wrap_content"
@@ -191,7 +191,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="企业入口"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Menu"
                     android:textColor="#555555"/>
                 <ImageView
                     android:layout_width="wrap_content"

@@ -26,6 +26,10 @@
         <activity android:name=".ActivityJinggang" />
         <activity android:name=".ActivityJobDetail" />
         <activity android:name=".Activity_chat"></activity>
+        <activity android:name=".miaomission" />
+        <activity android:name=".parttimetrip" />
+        <activity android:name=".nearjob" />
+        <activity android:name=".enrolljob" />
     </application>
 
 </manifest>

@@ -50,6 +50,7 @@ public class FragmentIndex extends Fragment implements View.OnClickListener,Adap
         ListView listView = (ListView) v.findViewById(R.id.joblist);
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(this);
+        listView.setFocusable(false);
         sv = (ScrollView) v.findViewById(R.id.scrollview);
         sv.smoothScrollTo(0, 0);
 
@@ -104,20 +105,16 @@ public class FragmentIndex extends Fragment implements View.OnClickListener,Adap
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.jinggang:
-                Intent i = new Intent(getActivity(),ActivityJinggang.class);
-                startActivity(i);
+                GoUtils.gotoac(getActivity(),ActivityJinggang.class);
                 break;
             case R.id.miao_mission:
-                Intent i1 = new Intent(getActivity(),miaomission.class);
-                startActivity(i1);
+                GoUtils.gotoac(getActivity(),miaomission.class);
                 break;
             case R.id.nearjob:
-                Intent i2 = new Intent(getActivity(),nearjob.class);
-                startActivity(i2);
+                GoUtils.gotoac(getActivity(),nearjob.class);
                 break;
             case R.id.parttime_trip:
-                Intent i3 = new Intent(getActivity(),parttimetrip.class);
-                startActivity(i3);
+                GoUtils.gotoac(getActivity(),parttimetrip.class);
                 break;
         }
     }
