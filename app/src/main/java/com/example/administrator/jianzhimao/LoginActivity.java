@@ -16,8 +16,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
-    private  String username = "admin";
-    private  String password = "admin123";
+    private  String username ;
+    private  String password ;
     private EditText ed_account;
     private EditText ed_password;
     private Context lcontext;
@@ -27,6 +27,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         lcontext = this;
+        username = "admin";
+        password = "admin";
         ed_account = (EditText) findViewById(R.id.login_account);
         ed_password = (EditText) findViewById(R.id.login_password);
 
@@ -62,14 +64,13 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 Toast.makeText(this,"login2",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btn_submit:
-                if(username.equals(ed_account.getText()) && password.equals(ed_password.getText()) ){
+                if(username.equals(ed_account.getText().toString()) && password.equals(ed_password.getText().toString()) ){
+                    SPUtils.putBoolean(lcontext,"welcomeGuide","isLogin",true);
                     Dialog dialog = new AlertDialog.Builder(this).setIcon(android.R.drawable.btn_star).setTitle("登陆成功")
                             .setPositiveButton("确定", new DialogInterface.OnClickListener() {
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
                                     goActivity(MainActivity.class);
-                                    SPUtils.putBoolean(lcontext,"welcomeGuide","isLogin",true);
-                                    finish();
                                 }
                             }).create();
                     dialog.show();
