@@ -43,7 +43,7 @@ public class FragmentMiao extends Fragment implements RadioGroup.OnCheckedChange
 
         topbar =v.findViewById(R.id.topbar);
         int statusBarHeight = BarUtils.getStatusBarHeight(v.getContext());
-        topbar.setPadding(getResources().getDimensionPixelOffset(R.dimen.dimen_20_dip) ,statusBarHeight,getResources().getDimensionPixelOffset(R.dimen.dimen_20_dip) ,getResources().getDimensionPixelOffset(R.dimen.dimen_20_dip) );
+        topbar.setPadding(0,statusBarHeight,0,0);
 
 
         return v;

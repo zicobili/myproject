@@ -50,7 +50,7 @@ public class FragmentIndex extends Fragment implements View.OnClickListener,Adap
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        for(int i = 0;i<30;i++){
+        for(int i = 0;i<10;i++){
             list.add(new Job("","","测试标题"+i,"","","",""));
         }
         adapter = new Joblistadapter(getActivity(),list,this);
