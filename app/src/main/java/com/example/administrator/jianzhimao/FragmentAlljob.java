@@ -15,6 +15,8 @@ import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.blankj.utilcode.utils.BarUtils;
+
 /**
  * Created by Administrator on 2016/10/31.
  */
@@ -37,6 +39,8 @@ public class FragmentAlljob extends Fragment implements View.OnClickListener {
 
     private Context mcontext;
 
+    private View topbar;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -57,6 +61,11 @@ public class FragmentAlljob extends Fragment implements View.OnClickListener {
         tv_type = (TextView) v.findViewById(R.id.tv_type);
 
         grayview = v.findViewById(R.id.grayview);
+
+
+        topbar =v.findViewById(R.id.topbar);
+        int statusBarHeight = 20+BarUtils.getStatusBarHeight(v.getContext());
+        topbar.setPadding(getResources().getDimensionPixelOffset(R.dimen.dimen_20_dip) ,statusBarHeight,getResources().getDimensionPixelOffset(R.dimen.dimen_20_dip) ,getResources().getDimensionPixelOffset(R.dimen.dimen_20_dip) );
 
 
         return v;

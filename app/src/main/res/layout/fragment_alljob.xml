@@ -6,26 +6,32 @@
               xmlns:tools="http://schemas.android.com/apk/res-auto"
               android:orientation="vertical"
               android:background="@color/deafault_Activity_bg">
-    <RelativeLayout
+    <LinearLayout
+        android:id="@+id/topbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="@dimen/dimen_20_dip"
-        android:background="@color/colorPrimary">
-        <TextView
-            android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="海口"
-            android:layout_centerVertical="true"
-            android:textColor="#ffffff"
-            android:textAppearance="@style/TextAppearance.AppCompat"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="全部兼职"
-            android:layout_centerInParent="true"
-            android:textColor="#ffffff"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
-    </RelativeLayout>
+            android:padding="@dimen/dimen_20_dip"
+            android:background="@color/colorPrimary">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="海口"
+                android:layout_centerVertical="true"
+                android:textColor="#ffffff"
+                android:textAppearance="@style/TextAppearance.AppCompat"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全部兼职"
+                android:layout_centerInParent="true"
+                android:textColor="#ffffff"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+        </RelativeLayout>
+    </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

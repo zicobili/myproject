@@ -47,6 +47,7 @@ public class  GoUtils {
 
 
 
+
     public static void gotoac (Context gcontext,Class mclass){
         Intent intent = new Intent(gcontext,mclass);
         gcontext.startActivity(intent);

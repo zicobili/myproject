@@ -11,6 +11,8 @@ import android.view.ViewGroup;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
+import com.blankj.utilcode.utils.BarUtils;
+
 /**
  * Created by Administrator on 2016/10/31.
  */
@@ -24,6 +26,8 @@ public class FragmentMiao extends Fragment implements RadioGroup.OnCheckedChange
     private FragmentMiaoContact fg2;
     private FragmentManager fManager;
 
+    private View topbar;
+
 
 
     @Nullable
@@ -36,6 +40,10 @@ public class FragmentMiao extends Fragment implements RadioGroup.OnCheckedChange
         rb1 = (RadioButton) v.findViewById(R.id.miao_rb1);
         rb2 = (RadioButton) v.findViewById(R.id.miao_rb2);
         rb1.setChecked(true);
+
+        topbar =v.findViewById(R.id.topbar);
+        int statusBarHeight = BarUtils.getStatusBarHeight(v.getContext());
+        topbar.setPadding(getResources().getDimensionPixelOffset(R.dimen.dimen_20_dip) ,statusBarHeight,getResources().getDimensionPixelOffset(R.dimen.dimen_20_dip) ,getResources().getDimensionPixelOffset(R.dimen.dimen_20_dip) );
 
 
         return v;

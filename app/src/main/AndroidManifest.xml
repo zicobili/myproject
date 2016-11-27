@@ -30,7 +30,16 @@
         <activity android:name=".parttimetrip" />
         <activity android:name=".nearjob" />
         <activity android:name=".enrolljob" />
+        <activity android:name=".enrolljob_sucess" />
         <activity android:name=".me_more" />
+        <activity android:name=".me_collect" />
+        <activity android:name=".me_interest" />
+        <activity android:name=".me_jobcard" />
+        <activity android:name=".me_myenroll_main" />
+        <activity android:name=".me_personal" />
+        <activity android:name=".me_renzheng" />
+        <activity android:name=".me_suggest" />
+        <activity android:name=".me_surance" />
     </application>
 
 </manifest>

@@ -45,6 +45,7 @@
                     android:gravity="center"
                     android:background="@drawable/abc_list_selector_disabled_holo_light">
                     <RelativeLayout
+                        android:id="@+id/me_collect"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1">
@@ -61,6 +62,7 @@
                         android:layout_height="match_parent"
                         android:layout_margin="@dimen/dimen_20_dip"/>
                     <RelativeLayout
+                        android:id="@+id/me_surance"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1">
@@ -99,6 +101,7 @@
                     android:background="#f4f4f4"
                     />
                 <LinearLayout
+                    android:id="@+id/ll_myenroll"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingTop="@dimen/dimen_20_dip"
@@ -207,6 +210,7 @@
                     android:paddingBottom="@dimen/dimen_20_dip"
                     android:orientation="horizontal">
                     <LinearLayout
+                        android:id="@+id/me_personal"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -226,6 +230,7 @@
                         android:padding="@dimen/dimen_10_dip"
                         android:background="#f4f4f4"/>
                     <LinearLayout
+                        android:id="@+id/me_jobcard"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -245,6 +250,7 @@
                         android:padding="@dimen/dimen_10_dip"
                         android:background="#f4f4f4"/>
                     <LinearLayout
+                        android:id="@+id/me_renzheng"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -264,6 +270,7 @@
                         android:padding="@dimen/dimen_10_dip"
                         android:background="#f4f4f4"/>
                     <LinearLayout
+                        android:id="@+id/me_interest"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -281,6 +288,7 @@
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
+                android:id="@+id/me_favorite"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -302,6 +310,7 @@
 
             </LinearLayout>
             <LinearLayout
+                android:id="@+id/me_suggest"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -323,7 +332,7 @@
 
             </LinearLayout>
             <LinearLayout
-                android:id="@+id/me_item_more"
+                android:id="@+id/me_more"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -347,19 +356,24 @@
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/dimen_20_dip"
-        android:layout_alignParentTop="true"
-        android:background="#fe751a">
-        <TextView
-            android:layout_width="wrap_content"
+        android:id="@+id/topbar">
+        <RelativeLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="个人中心"
-            android:layout_centerInParent="true"
-            android:textColor="#ffffff"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
-    </RelativeLayout>
+            android:padding="@dimen/dimen_20_dip"
+            android:layout_alignParentTop="true"
+            android:background="#fe751a">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="个人中心"
+                android:layout_centerInParent="true"
+                android:textColor="#ffffff"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+        </RelativeLayout>
+    </LinearLayout>
 
 </RelativeLayout>

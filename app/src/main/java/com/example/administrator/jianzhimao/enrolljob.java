@@ -22,6 +22,7 @@ public class enrolljob extends AppCompatActivity implements View.OnClickListener
             case R.id.btn_erolljob_submit:
                 Intent intent1 = new Intent(this,enrolljob_sucess.class);
                 startActivity(intent1);
+                finish();
                 break;
         }
     }

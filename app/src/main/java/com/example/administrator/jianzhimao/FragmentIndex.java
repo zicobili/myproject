@@ -75,7 +75,10 @@ public class FragmentIndex extends Fragment implements View.OnClickListener,Adap
         //设置图片加载器
         banner.setImageLoader(new banerImageLoader());
         //设置图片集合
-        String images[] = {"https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1478081530&di=f5c457fcaf24a9b7a0a802cbec40c0fe&src=http://b.hiphotos.baidu.com/image/pic/item/d009b3de9c82d15825ffd75c840a19d8bd3e42da.jpg","http://g.hiphotos.baidu.com/image/pic/item/4afbfbedab64034f4e754cebabc379310b551da6.jpg"};
+        String images[] = {"http://img1.tuniucdn.com/img/20150521/hdch/biyeji/byjbanner.jpg"
+                ,"http://resources.51camel.com/resources/uploadfiles/wechatarticle/news/635869438316236865.jpeg"
+        ,"http://img.zcool.cn/community/01c58b57c00ee90000018c1bb86b73.jpg@900w_1l_2o_100sh.jpg"
+        ,"http://pic.qiantucdn.com/58pic/21/68/94/72f58PICkGJ_1024.jpg"};
 //        imagesUrl.add("http://c.hiphotos.baidu.com/image/pic/item/eac4b74543a98226e523cd238882b9014b90ebd0.jpg");
 //        imagesUrl.add("http://g.hiphotos.baidu.com/image/h%3D200/sign=550078df4f36acaf46e091fc4cdb8d03/bd3eb13533fa828b38f1a605f91f4134960a5a01.jpg");
 //        imagesUrl.add("http://e.hiphotos.baidu.com/image/h%3D200/sign=ad33f815868ba61ec0eecf2f713597cc/43a7d933c895d143b14d1afc77f082025aaf0731.jpg");
@@ -95,7 +98,7 @@ public class FragmentIndex extends Fragment implements View.OnClickListener,Adap
         //滑动透明
         topbar =v.findViewById(R.id.topbar);
         int statusBarHeight = BarUtils.getStatusBarHeight(v.getContext());
-        topbar.setPadding(0 ,statusBarHeight,0,0);
+        topbar.setPadding(getResources().getDimensionPixelOffset(R.dimen.dimen_20_dip) ,statusBarHeight,getResources().getDimensionPixelOffset(R.dimen.dimen_20_dip) ,getResources().getDimensionPixelOffset(R.dimen.dimen_20_dip) );
         scrollView = (myScrollView) v.findViewById(R.id.scrollview);
         drawable = getResources().getDrawable(R.drawable.color_exam_grey);
         drawable.setAlpha(START_ALPHA);
