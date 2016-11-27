@@ -7,4 +7,6 @@
     <color name="deafault_Activity_bg">#f4f4f4</color>
     <color name="deafault_Item_bg">#ffffff</color>
     <color name="systemBackground">#f4f4f4</color>
+
+    <drawable name = "color_exam_grey">#fd7d21</drawable>
 </resources>

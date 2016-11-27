@@ -1,13 +1,429 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_chat"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.administrator.jianzhimao.Activity_chat">
+    android:orientation="vertical">
 
-</RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_chatnow_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@color/systemBackground"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dimen_8_dip"
+            android:paddingRight="@dimen/dimen_8_dip"
+            android:paddingTop="@dimen/dimen_20_dip"
+            android:paddingBottom="@dimen/dimen_20_dip"
+            android:background="@color/deafault_Item_bg">
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/back"
+                android:layout_alignParentLeft="true"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/more"
+                android:layout_alignParentRight="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="肖霞"
+                android:textSize="22sp"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_20_dip"
+            android:background="@color/deafault_Item_bg">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+                    android:text="获取电话"
+                    android:textColor="#999999"
+                    android:drawableLeft="@mipmap/icon_displayphone_change"/>
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#999999"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#999999"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+                    android:text="交换微信"
+                    android:drawableLeft="@mipmap/ic_wechat"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#888888"
+            android:padding="@dimen/dimen_15_dip">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+
+                    android:text="赶快去完善资料，获得换进头像!"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                    android:text="立即完善资料"/>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="@dimen/dimen_15_dip"
+                android:layout_height="@dimen/dimen_15_dip"
+                android:layout_gravity="center"
+                android:background="@mipmap/ic_selected_cancel"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen_20_dip"
+                        android:orientation="horizontal">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/icon_listmassege"/>
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_15_dip"
+                            android:layout_marginRight="@dimen/dimen_100_dip"
+                            android:background="@drawable/bg_contact_friend">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+                                android:textColor="#999999"
+                                android:text="你好！我是琳琅的肖霞，我们现在正在招聘："/>
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dimen_10_dip"
+                            android:padding="@dimen/dimen_20_dip"
+                            android:orientation="vertical"
+                            android:background="@drawable/switch_btn_bg_white">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dimen_20_dip"
+                                android:layout_marginBottom="@dimen/dimen_20_dip">
+                                <TextView
+                                    android:id="@+id/tv_codedec"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+                                    android:textColor="#999999"
+                                    android:text="销售员1"/>
+                                <TextView
+                                    android:id="@+id/tv_kind_dec"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+                                    android:textColor="#999999"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="@dimen/dimen_20_dip"
+                                    android:text="全职"
+                                    android:layout_toRightOf="@id/tv_codedec"/>
+                                <TextView
+                                    android:id="@+id/tv_salary"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+                                    android:textColor="#999999"
+                                    android:text="1400-1500元/月"/>
+                            </RelativeLayout>
+                            <View style="@style/xdiv"/>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+                                        android:textColor="#999999"
+                                        android:layout_marginTop="@dimen/dimen_20_dip"
+                                        android:text="初中"
+                                        android:gravity="center_vertical"
+                                        android:drawableLeft="@mipmap/icon_education_businesscard"/>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+                                        android:textColor="#999999"
+                                        android:layout_marginTop="@dimen/dimen_20_dip"
+                                        android:text="不限工作经验"
+                                        android:gravity="center_vertical"
+                                        android:drawableLeft="@mipmap/icon_exprence_businesscard"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+                                        android:textColor="#999999"
+                                        android:layout_marginTop="@dimen/dimen_20_dip"
+                                        android:text="18-25岁"
+                                        android:gravity="center_vertical"
+                                        android:drawableLeft="@mipmap/icon_age_businesscard"/>
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+                                        android:textColor="#999999"
+                                        android:layout_marginTop="@dimen/dimen_20_dip"
+                                        android:text="1.6公里|海口市龙华区"
+                                        android:gravity="center_vertical"
+                                        android:drawableLeft="@mipmap/map"/>
+
+                                </LinearLayout>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@mipmap/ic_arrow_default"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"/>
+                            </RelativeLayout>
+
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen_20_dip"
+                            android:src="@mipmap/icon_cuttingline"
+                            android:layout_gravity="center_horizontal"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/dimen_50_dip"
+                            android:background="@drawable/switch_btn_bg_white"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+                                android:textColor="#999999"
+                                android:gravity="center"
+                                android:layout_margin="@dimen/dimen_60_dip"
+                                android:text="肖霞正在招服务员并对你感兴趣，您可以直接"/>
+                            <View style="@style/xdiv"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/dimen_30_dip"
+                                android:layout_marginBottom="@dimen/dimen_10_dip"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+                                    android:textColor="#999999"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="电话联系TA"/>
+                                <View style="@style/ydiv"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+                                    android:textColor="#999999"
+                                    android:gravity="center"
+                                    android:layout_weight="1"
+                                    android:text="跟TA互换电话"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen_20_dip"
+                        android:orientation="horizontal">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/icon_listmassege"/>
+                        </RelativeLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="@dimen/dimen_15_dip"
+                            android:layout_marginRight="@dimen/dimen_100_dip"
+                            android:background="@drawable/bg_contact_friend">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+                                android:textColor="#999999"
+                                android:text="我想要和您交换短信，您是否同意"/>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="@dimen/dimen_30_dip"
+                                android:layout_marginBottom="@dimen/dimen_30_dip">
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="@dimen/dimen_20_dip"
+                                    android:layout_weight="1"
+                                    android:text="同意"
+                                    android:background="@color/colorPrimary"/>
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="拒绝"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Menu"
+                                    android:textColor="#ffffff"
+                                    android:background="#97e752"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_200_dip"
+                        android:background="@color/deafault_Activity_bg"/>
+
+
+
+
+
+
+
+
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dimen_10_dip"
+        android:background="@color/deafault_Item_bg"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_commonexpression_btn"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_emoji"/>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_gallery_add"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

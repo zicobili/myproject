@@ -97,8 +97,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
     private void goActivity(Class cls){
 
-        Intent intent = new Intent(LoginActivity.this,cls);
+        Intent intent = new Intent(lcontext,cls).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
         LoginActivity.this.startActivity(intent);
-        LoginActivity.this.finish();
     }
 }

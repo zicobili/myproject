@@ -40,8 +40,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="校园推广大使"
-                    android:textColor="#333333"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Menu"/>
+                    android:textColor="#666666"
+                    android:textAppearance="@style/TextAppearance.AppCompat"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -49,7 +49,7 @@
                     android:paddingLeft="@dimen/dimen_10_dip"
                     android:paddingRight="@dimen/dimen_5_dip"
                     android:textColor="#fe551a"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Menu"/>
+                    android:textAppearance="@style/TextAppearance.AppCompat"/>
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

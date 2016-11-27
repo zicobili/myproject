@@ -3,6 +3,7 @@ package com.example.administrator.jianzhimao;
 import android.app.Fragment;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -12,6 +13,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.ScrollView;
 
+import com.blankj.utilcode.utils.BarUtils;
 import com.example.administrator.jianzhimao.adapter.Job;
 import com.example.administrator.jianzhimao.adapter.Joblistadapter;
 import com.example.administrator.jianzhimao.banner.banerImageLoader;
@@ -34,6 +36,17 @@ public class FragmentIndex extends Fragment implements View.OnClickListener,Adap
     private ListView listView;
     private ScrollView sv;
 
+
+
+    //滑动透明
+    private View topbar;
+    private myScrollView scrollView;  //整体ScrollView
+    private static final int START_ALPHA = 0;
+    private static final int END_ALPHA = 255;
+    private int fadingHeight = 600;   //当ScrollView滑动到什么位置时渐变消失（根据需要进行调整）
+    private Drawable drawable;        //顶部渐变布局需设置的Drawable
+
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +54,8 @@ public class FragmentIndex extends Fragment implements View.OnClickListener,Adap
             list.add(new Job("","","测试标题"+i,"","","",""));
         }
         adapter = new Joblistadapter(getActivity(),list,this);
+
+
     }
 
 
@@ -74,8 +89,33 @@ public class FragmentIndex extends Fragment implements View.OnClickListener,Adap
         //banner设置方法全部调用完毕时最后调用
         banner.start();
 
+
+
+        //滑动透明
+        //滑动透明
+        topbar =v.findViewById(R.id.topbar);
+        int statusBarHeight = BarUtils.getStatusBarHeight(v.getContext());
+        topbar.setPadding(0 ,statusBarHeight,0,0);
+        scrollView = (myScrollView) v.findViewById(R.id.scrollview);
+        drawable = getResources().getDrawable(R.drawable.color_exam_grey);
+        drawable.setAlpha(START_ALPHA);
+        topbar.setBackgroundDrawable(drawable);
+
+        scrollView.setOnScrollChangedListener(scrollChangedListener);
+
+
+
         return v;
     }
+    private myScrollView.OnScrollChangedListener scrollChangedListener = new myScrollView.OnScrollChangedListener() {
+        @Override
+        public void onScrollChanged(ScrollView who, int x, int y, int oldx, int oldy) {
+            if (y > fadingHeight) {
+                y = fadingHeight;   //当滑动到指定位置之后设置颜色为纯色，之前的话要渐变---实现下面的公式即可
+            }
+            drawable.setAlpha(y * (END_ALPHA - START_ALPHA) / fadingHeight + START_ALPHA);
+        }
+    };
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {

@@ -382,21 +382,22 @@
                         android:textColor="#999999"
                         android:text="联系电话："/>
                     <TextView
+                        android:id="@+id/jbd_phoneNum"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:textAppearance="@style/Base.TextAppearance.AppCompat.Menu"
                         android:textColor="#555555"
                         android:text="18789027623"/>
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@mipmap/phone"/>
+
                     <TextView
+                        android:id="@+id/jbd_phone"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="@style/Base.TextAppearance.AppCompat.Menu"
                         android:textColor="@color/colorPrimary"
+                        android:drawableLeft="@mipmap/phone"
+                        android:gravity="center"
                         android:text="拨打电话"
                         android:layout_marginRight="@dimen/dimen_40_dip"/>
                 </LinearLayout>
