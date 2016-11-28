@@ -8,7 +8,6 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import com.blankj.utilcode.utils.BarUtils;
 
@@ -56,7 +55,7 @@ public class FragmentMe extends Fragment implements View.OnClickListener {
                 startActivity(intent1);
                 break;
             case R.id.me_favorite:
-                Intent intent2 = new Intent(getActivity(),favorite.class);
+                Intent intent2 = new Intent(getActivity(),me_favorite.class);
                 startActivity(intent2);
                 break;
             case R.id.me_suggest:

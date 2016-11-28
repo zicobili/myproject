@@ -1,5 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+
+
+
+
+
+
+
+
+
+    <dimen name="side_letter_bar_letter_size">12sp</dimen>
+    <dimen name="side_letter_bar_width">36dp</dimen>
+    <dimen name="city_text_size">16sp</dimen>
+
+
+
+
+
+
+
+
+
+
     <dimen name="dimen_0.5_dip">0.5px</dimen>
     <dimen name="dimen_1_dip">1px</dimen>
     <dimen name="dimen_2_dip">2px</dimen>

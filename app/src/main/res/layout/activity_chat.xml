@@ -168,7 +168,7 @@
                             android:layout_margin="@dimen/dimen_10_dip"
                             android:padding="@dimen/dimen_20_dip"
                             android:orientation="vertical"
-                            android:background="@drawable/switch_btn_bg_white">
+                            android:background="@drawable/abc_switch_track_mtrl_alpha">
                             <RelativeLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -273,7 +273,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="@dimen/dimen_50_dip"
-                            android:background="@drawable/switch_btn_bg_white"
+                            android:background="@drawable/abc_switch_track_mtrl_alpha"
                             android:orientation="vertical">
                             <TextView
                                 android:layout_width="match_parent"

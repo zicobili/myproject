@@ -12,11 +12,13 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.ScrollView;
+import android.widget.TextView;
 
 import com.blankj.utilcode.utils.BarUtils;
 import com.example.administrator.jianzhimao.adapter.Job;
 import com.example.administrator.jianzhimao.adapter.Joblistadapter;
 import com.example.administrator.jianzhimao.banner.banerImageLoader;
+import com.example.administrator.jianzhimao.citypicker.CityPickerActivity;
 import com.youth.banner.Banner;
 import com.youth.banner.BannerConfig;
 
@@ -35,6 +37,8 @@ public class FragmentIndex extends Fragment implements View.OnClickListener,Adap
     private Context mContext;
     private ListView listView;
     private ScrollView sv;
+
+    private TextView localtion;
 
 
 
@@ -61,6 +65,9 @@ public class FragmentIndex extends Fragment implements View.OnClickListener,Adap
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_index,null);
+
+
+
         ////////////////////listview/////////////////////////////
         ListView listView = (ListView) v.findViewById(R.id.joblist);
         listView.setAdapter(adapter);
@@ -75,15 +82,9 @@ public class FragmentIndex extends Fragment implements View.OnClickListener,Adap
         //设置图片加载器
         banner.setImageLoader(new banerImageLoader());
         //设置图片集合
-        String images[] = {"http://img1.tuniucdn.com/img/20150521/hdch/biyeji/byjbanner.jpg"
-                ,"http://resources.51camel.com/resources/uploadfiles/wechatarticle/news/635869438316236865.jpeg"
-        ,"http://img.zcool.cn/community/01c58b57c00ee90000018c1bb86b73.jpg@900w_1l_2o_100sh.jpg"
-        ,"http://pic.qiantucdn.com/58pic/21/68/94/72f58PICkGJ_1024.jpg"};
-//        imagesUrl.add("http://c.hiphotos.baidu.com/image/pic/item/eac4b74543a98226e523cd238882b9014b90ebd0.jpg");
-//        imagesUrl.add("http://g.hiphotos.baidu.com/image/h%3D200/sign=550078df4f36acaf46e091fc4cdb8d03/bd3eb13533fa828b38f1a605f91f4134960a5a01.jpg");
-//        imagesUrl.add("http://e.hiphotos.baidu.com/image/h%3D200/sign=ad33f815868ba61ec0eecf2f713597cc/43a7d933c895d143b14d1afc77f082025aaf0731.jpg");
-//        imagesUrl.add("http://e.hiphotos.baidu.com/image/h%3D200/sign=1083dd2aa7cc7cd9e52d33d909002104/838ba61ea8d3fd1ffd1864fd344e251f94ca5fe0.jpg");
-//        imagesUrl.add("http://b.hiphotos.baidu.com/image/pic/item/6609c93d70cf3bc756100b2bd500baa1cc112ae1.jpg");
+        String images[] = {"http://resources.51camel.com/resources/uploadfiles/wechatarticle/news/635869438316236865.jpeg"
+                ,"http://img.henan.cc/health/news/2016-08-16/a0f55b5924de570dca8608403c0c5041.png"};
+
         banner.setImages(Arrays.asList(images));
         Log.v("aaaaaa",images.toString());
         //banner config
@@ -133,6 +134,7 @@ public class FragmentIndex extends Fragment implements View.OnClickListener,Adap
         parttimetrip.setOnClickListener(this);
         nearjob.setOnClickListener(this);
         miaomission.setOnClickListener(this);
+        localtion.setOnClickListener(this);
 
     }
 
@@ -141,12 +143,18 @@ public class FragmentIndex extends Fragment implements View.OnClickListener,Adap
         parttimetrip = getActivity().findViewById(R.id.parttime_trip);
         nearjob = getActivity().findViewById(R.id.nearjob);
         miaomission = getActivity().findViewById(R.id.miao_mission);
+        //topbar
+        localtion = (TextView) getActivity().findViewById(R.id.localtion);
+
 
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()){
+            case R.id.localtion:
+                GoUtils.gotoac(getActivity(), CityPickerActivity.class);
+                break;
             case R.id.jinggang:
                 GoUtils.gotoac(getActivity(),ActivityJinggang.class);
                 break;
@@ -159,6 +167,7 @@ public class FragmentIndex extends Fragment implements View.OnClickListener,Adap
             case R.id.parttime_trip:
                 GoUtils.gotoac(getActivity(),parttimetrip.class);
                 break;
+
         }
     }
 

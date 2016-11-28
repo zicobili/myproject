@@ -3,7 +3,7 @@ package com.example.administrator.jianzhimao;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class favorite extends AppCompatActivity {
+public class me_favorite extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

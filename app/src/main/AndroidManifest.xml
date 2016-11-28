@@ -5,6 +5,11 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
     <application
         android:name=".MyApplication"
         android:allowBackup="true"
@@ -19,27 +24,38 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity" android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity android:name=".SplashActivity" />
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".LoginActivity" android:windowSoftInputMode="stateHidden|adjustPan"/>
         <activity android:name=".SelectIdentityActivity" />
         <activity android:name=".ActivityJinggang" />
         <activity android:name=".ActivityJobDetail" />
-        <activity android:name=".Activity_chat"/>
+        <activity android:name=".Activity_chat" android:windowSoftInputMode="stateHidden|adjustPan"/>
         <activity android:name=".miaomission" />
         <activity android:name=".parttimetrip" />
         <activity android:name=".nearjob" />
-        <activity android:name=".enrolljob" />
+        <activity android:name=".enrolljob" android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity android:name=".enrolljob_sucess" />
+
         <activity android:name=".me_more" />
         <activity android:name=".me_collect" />
         <activity android:name=".me_interest" />
+        <activity android:name=".me_favorite" />
         <activity android:name=".me_jobcard" />
         <activity android:name=".me_myenroll_main" />
         <activity android:name=".me_personal" />
         <activity android:name=".me_renzheng" />
-        <activity android:name=".me_suggest" />
+        <activity android:name=".me_suggest" android:windowSoftInputMode="stateHidden|adjustPan" />
         <activity android:name=".me_surance" />
+
+
+
+
+        <activity android:name=".citypicker.CityPickerActivity" android:windowSoftInputMode="stateHidden|adjustPan" />
+        <!--高德地图定位-->
+        <service android:name="com.amap.api.location.APSService"/>
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="07e4e3deba98311f4e9749f8170a9166"/>
+        <!--高德地图定位结束-->
     </application>
 
 </manifest>
